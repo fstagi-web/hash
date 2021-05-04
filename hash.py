@@ -22,18 +22,18 @@ z = input("Please enter your SSN with no spaces or dashes \n")
 hash_name2 = hashlib.sha256(z.encode())
 hex_dig2 = hash_name2.hexdigest()
 
-y = input("Please enter the amount to transfer\n")
+y = input("Please enter the amount to transfer or withdrawl\n")
 hash_name3 = hashlib.sha256(y.encode())
 hex_dig3 = hash_name3.hexdigest()
 
 
 
 
-print("BANK ACCOUNT NUMBER:", hex_dig)
-print("SSN:", hex_dig2)
-print("TRANSFER AMOUNT:", hex_dig3)
-print("NAME:", hex_dig4)
-print("PIN:", hex_digi5)
+print("*BANK ACCOUNT NUMBER*:", hex_dig)
+print("*SSN*:", hex_dig2)
+print("*TRANSFER AMOUNT*:", hex_dig3)
+print("*NAME*:", hex_dig4)
+print("*PIN*:", hex_digi5)
 
 
 
