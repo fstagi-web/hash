@@ -9,7 +9,8 @@ hash_name4 = hashlib.sha256(name.encode())
 hex_dig4 = hash_name4.hexdigest()
 
 pin = input("Please enter your PIN\n")
-
+hash_name5 = hashlib.sha256(pin.encode())
+hex_digi5 = hash_name5.hexdigest()
 
 
 
@@ -28,11 +29,11 @@ hex_dig3 = hash_name3.hexdigest()
 
 
 
-print(hex_dig)
-print(hex_dig2)
-print(hex_dig3)
-print(hex_dig4)
-
+print("BANK ACCOUNT NUMBER:", hex_dig)
+print("SSN:", hex_dig2)
+print("TRANSFER AMOUNT:", hex_dig3)
+print("NAME:", hex_dig4)
+print("PIN:", hex_digi5)
 
 
 
