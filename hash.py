@@ -1,8 +1,11 @@
 import hashlib
 import time
+import uuid
 
 print("***Bank Verification***")
 time.sleep(1)
+
+
 
 name = input("Please enter your name \n")
 hash_name4 = hashlib.sha256(name.encode())
@@ -22,18 +25,27 @@ z = input("Please enter your SSN with no spaces or dashes \n")
 hash_name2 = hashlib.sha256(z.encode())
 hex_dig2 = hash_name2.hexdigest()
 
-y = input("Please enter the amount to transfer or withdrawl\n")
+y = input("Please enter the amount to withdrawl\n")
 hash_name3 = hashlib.sha256(y.encode())
 hex_dig3 = hash_name3.hexdigest()
 
+time.sleep(2)
 
+print("---------------")
+print("*TRANSACTION ID*", uuid.uuid1())
+print("---------------")
 
+time.sleep(1)
 
-print("*BANK ACCOUNT NUMBER*:", hex_dig)
-print("*SSN*:", hex_dig2)
-print("*TRANSFER AMOUNT*:", hex_dig3)
 print("*NAME*:", hex_dig4)
+print("*SSN*:", hex_dig2)
+print("*BANK ACCOUNT NUMBER*:", hex_dig)
 print("*PIN*:", hex_digi5)
+print("*TRANSFER AMOUNT*:", hex_dig3)
+
+
+
+
 
 
 
